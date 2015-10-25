@@ -12,3 +12,4 @@ def sqrtIter(guess: Double, x: Double): Double =
   if (isGoodEnough(guess, x)) guess else
     sqrtIter(improve(guess, x), x)
 
+def sqrt(x: Double) = sqrtIter(1.0, x)
